@@ -1,4 +1,4 @@
-import data from 'data.json';
+import data from 'components/data.json';
 
-<Statistics title="Upload stats" stats={data} />
-<Statistics stats={data} />
+
+<><Statistics title="Upload stats" stats={data} /><Statistics stats={data} /></>
