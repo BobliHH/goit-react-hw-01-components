@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import data from 'components/data.json';
+import data from './data.json';
 
 <>
   <Statistics title="Upload stats" stats={data} />

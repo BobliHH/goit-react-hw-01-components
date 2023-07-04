@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
 
-import friends from 'components/Friends/friends.json';
+import friends from './friends.json';
 
 <FriendList friends={friends} />;
