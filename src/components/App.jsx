@@ -1,5 +1,7 @@
 import { Profile } from "./Profile/Profile";
-import userData from "./Profile/user.json";
+import profileData from "./Profile/user.json";
+import { Stats } from "./Statistics/Statistics";
+import statsData from "./Statistics/data.json";
 
 export const App = () => {
   return (
@@ -13,7 +15,8 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile {...userData} />
+      <Profile {...profileData} />
+      <Stats {...statsData} />
     </div>
   );
 };
