@@ -1,3 +1,6 @@
+import { Profile } from "./Profile/Profile";
+import userData from "./Profile/user.json";
+
 export const App = () => {
   return (
     <div
@@ -10,8 +13,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      React homework template First modification
-      <button onClick={event => console.log(event)}>Click me!</button>
+      <Profile {...userData} />
     </div>
   );
 };
