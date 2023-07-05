@@ -22,12 +22,12 @@ function Element({ stat }) {
       style={{
         backgroundColor:
           stat.label === '.docx'
-            ? '#4FC4F7'
+            ? '#50c4f4'
             : stat.label === '.pdf'
-            ? 'purple'
+            ? '#a43cf3'
             : stat.label === '.mp3'
-            ? 'red'
-            : '#20B8C5',
+            ? '#e64c66'
+            : '#1bbbc4',
       }}
     >
       <p>{stat.label}</p>
