@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import data from './data.json';
+import statsData from './data.json';
 
 
 export const Stats = props => {
@@ -8,7 +8,7 @@ export const Stats = props => {
     <div>
       <h2>UPLOAD STATS</h2>
       <ul>
-        {data.map(d => (
+        {statsData.map(d => (
           <Element stat={d} key={d.id} />
         ))}
       </ul>
