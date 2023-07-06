@@ -10,13 +10,13 @@ export const Profile = props => {
       <h3>{props.location}</h3>
       <ul>
         <li>
-          <strong>{props.stats['followers']}</strong> Followers
+          <strong>{props.stats.followers}</strong> Followers
         </li>
         <li>
-          <strong>{props.stats['views']}</strong> Views
+          <strong>{props.stats.views}</strong> Views
         </li>
         <li>
-          <strong>{props.stats['likes']}</strong> Likes
+          <strong>{props.stats.likes}</strong> Likes
         </li>
       </ul>
     </div>
