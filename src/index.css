@@ -13,3 +13,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.profileContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding : 20px;
+}
+
+.profileImg{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid red;
+  border-radius:50%;
+}
+
+.userStats{
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+}
+
+.userStats__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid gray;
+  align-items: center;
+}

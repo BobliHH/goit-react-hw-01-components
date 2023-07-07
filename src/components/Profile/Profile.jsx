@@ -3,20 +3,28 @@ import PropTypes from 'prop-types';
 
 export const Profile = props => {
   return (
-    <div>
-      <img alt="props.name" src={props.avatar} width={'50'} />
-      <h2>{props.username}</h2>
-      <h4>{'@' + props.tag}</h4>
-      <h3>{props.location}</h3>
-      <ul>
-        <li>
-          <strong>{props.stats.followers}</strong> Followers
+    <div className="profileContainer">
+      <div className="profile">
+        <img
+          className="profileImg"
+          alt="props.name"
+          src={props.avatar}
+          width={'50'}
+        />
+        <h2 className="userName">{props.username}</h2>
+        <h4 className="userTag">{'@' + props.tag}</h4>
+        <h3 className="userLocation">{props.location}</h3>
+      </div>
+
+      <ul className="userStats">
+        <li className="userStats__item">
+          Followers<strong>{props.stats.followers}</strong>
         </li>
-        <li>
-          <strong>{props.stats.views}</strong> Views
+        <li className="userStats__item">
+          Views <strong>{props.stats.views}</strong>
         </li>
-        <li>
-          <strong>{props.stats.likes}</strong> Likes
+        <li className="userStats__item">
+          Likes<strong>{props.stats.likes}</strong>
         </li>
       </ul>
     </div>
