@@ -5,9 +5,9 @@ import statsData from './data.json';
 
 export const Stats = props => {
   return (
-    <div>
-      <h2>UPLOAD STATS</h2>
-      <ul>
+    <div className='statsContainer'>
+      <h2 className='statsTitle'>UPLOAD STATS</h2>
+      <ul className='statsList'>
         {statsData.map(d => (
           <Element stat={d} key={d.id} />
         ))}
@@ -19,6 +19,7 @@ export const Stats = props => {
 function Element({ stat }) {
   return (
     <li
+      className="statsList__item"
       style={{
         backgroundColor:
           stat.label === '.docx'
